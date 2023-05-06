@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metclan | Software Development</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metclan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="app">
-        <div class="image-container">
-            <img 
-                src="./assets/working_ai.png"
-                class="img__big"
-            />
+      <div class="image-container">
+        <img src="./assets/working_ai.png" class="img__big" />
+        <img src="./assets/working_ai_mini.png" class="img__small" />
+      </div>
+      <div>
+        <h1>
+          We're cooking up! <br />
+          <span class="company__name">Metclan</span>
+        </h1>
+        <p class="announcement">
+          Metclan will launch soon. Join the waitlist to access the exclusive
+          offers for early birds.
+        </p>
+        <p class="invalid-email" id="invalid-email">Invalid Email 😎</p>
+        <form class="waitlist-form" id="form">
+          <input
+            type="emai"
+            placeholder="Enter your email"
+            id="waitlist-input"
+            class="waitlist__email-input"
+          />
+          <button
+            type="submit"
+            class="waitlist-submit-button"
+            id="submit-button"
+          >
+            Join Waitlist
+          </button>
+        </form>
+        <div class="launch__message" id="launch-message">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            ></path>
+          </svg>
+          <p class="">Thanks for joining! We'll connect with you soon.</p>
         </div>
-        <div> 
-            <h1>Guess what we're up to <br> Metc    lan </h1>
-            <p>Metclan will launch soon. Join the waitlist to access the exclusive offers before it's publicly available.</p>
-            <form>
-                <input
-                    type="emai"
-                    placeholder="Enter your email"
-                /> 
-                <button> Join Waitlist </button>
-            </form>
-        </div>
+      </div>
     </div>
-</body>
+    <footer class="footer">
+      <small>&#169;2023 Metclan. All rights reserved.</small>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open sans", sans-serif;
+  scroll-behavior: smooth;
+}
+.app {
+  padding-inline: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 400px;
+}
+h1 {
+  color: #fdaf00;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+}
+.company__name {
+  color: #000;
+}
+.announcement {
+  color: #565d68;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.waitlist__email-input {
+  background-color: #e4e7eb;
+  padding-inline: 12px;
+  padding-block: 15px;
+  outline-color: transparent;
+  border-color: transparent;
+  border-width: 2px;
+  border-radius: 5px;
+  flex: 1;
+}
+.waitlist__email-input:focus {
+  border: 2px solid #fdaf00;
+  outline: #fdaf00;
+}
+.waitlist-submit-button {
+  padding-inline: 12px;
+  padding-block: 15px;
+  background-color: #fdaf00;
+  outline: none;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+  border-color: transparent;
+  border-width: 2px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.waitlist-submit-button:hover {
+  background-color: #ffc338;
+}
+.waitlist-form {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+footer {
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+}
+small {
+  color: #565d68;
+}
+.launch__message {
+  display: none;
+  align-items: center;
+  gap: 3px;
+  color: #1d1d1d;
+  font-size: 0.9rem;
+}
+svg {
+  width: 20px;
+}
+.img__big {
+  display: none;
+}
+.invalid-email {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  visibility: hidden;
+  color: red;
+}
+@media screen and (min-width: 640px) {
+  .app {
+    max-width: 640px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .announcement {
+    margin-bottom: 25px;
+  }
+  .waitlist-form {
+    flex-flow: row;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .app {
+    max-width: 1024px;
+    flex-flow: row-reverse;
+  }
+  .img__big {
+    display: block;
+  }
+  .img__small {
+    display: none;
+  }
+  h1 {
+    text-align: left;
+  }
+  .announcement {
+    text-align: left;
+  }
+}

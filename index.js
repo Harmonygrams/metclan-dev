@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
 });
 
 const waitList = async (_email) => {
-  const url = "http://localhost:5001/join-waitlist";
+  const url = "http://149.102.158.223:3001/join-waitlist";
   try {
     const response = await fetch(url, {
       method: "POST",
